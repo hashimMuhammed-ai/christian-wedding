@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Rachel &amp; Daniel – Wedding Invitation</title>
+    <meta property="og:title" content="Rachel &amp; Daniel are getting married">
+    <meta property="og:description" content="Join us for our wedding celebration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Great+Vibes&family=Mulish:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ink: #3b1a63;
+            --paper: #cfe8f7;
+            --card: #ffffffd9;
+            --soft: transparent;
+            --line: #d9cdee;
+            --v: #8a5fcb;
+            --btn: #3b1a63;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px)
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: env(safe-area-inset-top, 0px)
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font: 400 17px/1.6 Mulish, sans-serif;
+            overflow-x: hidden
+        }
+
+        [hidden] {
+            display: none !important
+        }
+
+        .tk {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background: radial-gradient(ellipse 38% 11% at 22% 16%, #ffffffcc, transparent), radial-gradient(ellipse 42% 12% at 78% 42%, #ffffffb3, transparent), radial-gradient(ellipse 40% 11% at 28% 72%, #ffffffb3, transparent), linear-gradient(#cfe8f7, #8ec9ee 55%, #b9dff5)
+        }
+
+        .script {
+            font-family: 'Great Vibes', cursive;
+            font-weight: 400
+        }
+
+        .serif {
+            font-family: 'Cormorant Garamond', serif
+        }
+
+        .hero {
+            --ink: #3b1a63;
+            color: #3b1a63;
+            position: relative;
+            min-height: max(100svh, 780px);
+            overflow: hidden;
+            background: linear-gradient(#cfe8f7, #8ec9ee 70%, #a7d6f2);
+            text-align: center;
+            padding: 105px 16px 280px
+        }
+
+        .cl {
+            position: absolute;
+            border-radius: 50%;
+            background: #fff;
+            filter: blur(30px);
+            opacity: .7;
+            animation: drift 38s ease-in-out infinite alternate
+        }
+
+        @keyframes drift {
+            to {
+                transform: translateX(14vw)
+            }
+        }
+
+
+        .hero svg.f {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            pointer-events: none
+        }
+
+        .br {
+            top: 0;
+            height: 170px;
+            transform-origin: 50% 0;
+            animation: sway 7s ease-in-out infinite alternate
+        }
+
+        @keyframes sway {
+            to {
+                transform: rotate(.7deg)
+            }
+        }
+
+        .li {
+            top: 0;
+            height: 130px
+        }
+
+        .bu {
+            fill: #ffe08a;
+            filter: drop-shadow(0 0 4px #ffd166);
+            animation: tw 3s ease-in-out infinite
+        }
+
+        @keyframes tw {
+            50% {
+                opacity: .35
+            }
+        }
+
+        .gr {
+            bottom: 0;
+            height: 200px
+        }
+
+        .fl {
+            transform-origin: 50% 100%;
+            animation: sway 5s ease-in-out infinite alternate
+        }
+
+        .ht {
+            position: relative;
+            z-index: 3;
+            font-size: 19px
+        }
+
+        .l {
+            opacity: 0;
+            animation: up .9s calc(var(--d) + 2.5s) forwards
+        }
+
+        @keyframes up {
+            from {
+                opacity: 0;
+                transform: translateY(22px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .ht h1 {
+            font-size: clamp(38px, 11.5vw, 104px);
+            line-height: 1.18;
+            margin: 4px 0 10px;
+            overflow: visible;
+        }
+
+        .i {
+            font-style: italic;
+            font-size: 1.25em;
+            font-weight: 500
+        }
+
+        .dt {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3em;
+            margin: 14px 0 20px
+        }
+
+        .dt b {
+            font-size: 3em;
+            line-height: 1;
+            font-weight: 500
+        }
+
+        .dt i {
+            width: 1px;
+            height: 46px;
+            background: #3b1a63
+        }
+
+        .vn {
+            font-size: 1.9em;
+            font-weight: 600
+        }
+
+        /* Sacred Scripture Motto (Classic Stationer Blessing) */
+        .scripture-motto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto 16px;
+            max-width: 480px;
+            padding: 0 16px;
+        }
+
+        .scripture-motto .sc-cross {
+            color: #c99326;
+            font-size: 1.2em;
+            line-height: 1;
+            margin-bottom: 5px;
+            filter: drop-shadow(0 0 6px rgba(247, 201, 72, 0.65));
+            display: inline-block;
+        }
+
+        .scripture-motto .sc-verse {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 600;
+            font-size: clamp(18px, 4.4vw, 22px);
+            line-height: 1.35;
+            color: #3b1a63;
+            margin: 0 0 6px;
+            letter-spacing: 0.015em;
+            text-shadow: 0 1px 8px rgba(255, 255, 255, 0.85);
+        }
+
+        .scripture-motto .sc-ref {
+            font-family: Mulish, sans-serif;
+            font-style: normal;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: #8a5fcb;
+            text-transform: uppercase;
+            opacity: 0.92;
+        }
+
+        @media (min-width: 580px) {
+            .scripture-motto .sc-br {
+                display: none;
+            }
+        }
+
+        .crest {
+            margin-bottom: 8px;
+            display: inline-block;
+            filter: drop-shadow(0 4px 14px rgba(212, 175, 55, 0.28));
+            transition: transform 0.4s ease;
+        }
+
+        .crest:hover {
+            transform: scale(1.06);
+        }
+
+        /* Gold Shimmer Foil Text */
+        .gold-shimmer-text {
+            background: linear-gradient(120deg, #3b1a63 0%, #6e4099 20%, #d4af37 40%, #fff7d6 50%, #c99326 60%, #3b1a63 85%);
+            background-size: 240% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: goldShimmer 8s ease-in-out infinite;
+            display: inline-block;
+            white-space: nowrap;
+            padding-right: 0.22em;
+            padding-left: 0.06em;
+            filter: drop-shadow(0 2px 10px rgba(212, 175, 55, 0.2));
+        }
+
+        @keyframes goldShimmer {
+            0% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+            100% { background-position: 0% center; }
+        }
+
+        .hero-invite-line {
+            font-size: clamp(12.5px, 3.5vw, 16px);
+            white-space: nowrap;
+            margin: 6px 0 14px;
+            letter-spacing: 0.01em;
+        }
+
+
+
+        /* Cathedral Gothic Window Silhouette */
+        .hero-cathedral {
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            width: clamp(340px, 50vw, 520px);
+            height: 560px;
+            pointer-events: none;
+            z-index: 2;
+            opacity: 0.38;
+            filter: drop-shadow(0 0 16px rgba(255, 240, 190, 0.3));
+        }
+
+        /* God Rays / Heavenly Sunbeams */
+        .god-rays {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .ray {
+            position: absolute;
+            top: -120px;
+            width: 320px;
+            height: 1250px;
+            background: linear-gradient(180deg, rgba(255, 248, 220, 0.32) 0%, rgba(255, 235, 170, 0.14) 45%, transparent 80%);
+            filter: blur(40px);
+            transform-origin: 50% 0%;
+            animation: rayShift 10s ease-in-out infinite alternate;
+        }
+
+        .ray-1 { left: 10%; transform: rotate(16deg); animation-duration: 9s; }
+        .ray-2 { left: 48%; transform: rotate(-3deg); animation-duration: 12s; animation-delay: 2s; }
+        .ray-3 { right: 12%; transform: rotate(-20deg); animation-duration: 11s; animation-delay: 4s; }
+
+        @keyframes rayShift {
+            0% { opacity: 0.55; transform: rotate(var(--r, 0deg)) scaleX(0.9); }
+            100% { opacity: 0.95; transform: rotate(var(--r, 0deg)) scaleX(1.15); }
+        }
+
+        /* Flying White Doves */
+        .dove-track {
+            position: absolute;
+            top: 90px;
+            left: -60px;
+            z-index: 2;
+            pointer-events: none;
+            filter: drop-shadow(0 4px 8px rgba(59, 26, 99, 0.1));
+        }
+
+        .dove-track-1 {
+            animation: doveFlight1 30s 2s linear infinite;
+        }
+
+        .dove-track-2 {
+            top: 60px;
+            animation: doveFlight2 30s 3.6s linear infinite;
+        }
+
+        .dove-svg {
+            width: 36px;
+            height: 26px;
+            display: block;
+        }
+
+        .dove-wing {
+            transform-origin: 16px 13px;
+            animation: doveFlap 0.44s ease-in-out infinite alternate;
+        }
+
+        @keyframes doveFlight1 {
+            0% { transform: translate(-8vw, 30px) scale(0.9); }
+            50% { transform: translate(52vw, 12px) scale(1); }
+            100% { transform: translate(114vw, 34px) scale(0.9); }
+        }
+
+        @keyframes doveFlight2 {
+            0% { transform: translate(-8vw, 20px) scale(0.76); }
+            50% { transform: translate(49vw, 2px) scale(0.85); }
+            100% { transform: translate(114vw, 22px) scale(0.76); }
+        }
+
+        @keyframes doveFlap {
+            0% { transform: scaleY(1) rotate(0deg); }
+            100% { transform: scaleY(-0.65) rotate(-16deg); }
+        }
+
+        /* Floating Golden Sparkles / Fireflies */
+        .hero-motes {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .hm {
+            position: absolute;
+            border-radius: 50%;
+            background: #ffd166;
+            box-shadow: 0 0 8px #ffd166, 0 0 16px rgba(255, 209, 102, 0.6);
+            opacity: 0;
+            animation: moteFloat 11s infinite ease-in-out;
+        }
+
+        .hm-1 { width: 5px; height: 5px; left: 16%; bottom: 90px; animation-duration: 9s; animation-delay: 0.5s; }
+        .hm-2 { width: 4px; height: 4px; left: 30%; bottom: 60px; animation-duration: 12s; animation-delay: 2.2s; }
+        .hm-3 { width: 6px; height: 6px; left: 46%; bottom: 95px; animation-duration: 8.5s; animation-delay: 1.1s; }
+        .hm-4 { width: 4px; height: 4px; left: 64%; bottom: 55px; animation-duration: 11.5s; animation-delay: 3.4s; }
+        .hm-5 { width: 5px; height: 5px; left: 80%; bottom: 75px; animation-duration: 10s; animation-delay: 4.2s; }
+        .hm-6 { width: 4px; height: 4px; left: 24%; bottom: 130px; animation-duration: 13s; animation-delay: 5.5s; }
+        .hm-7 { width: 5px; height: 5px; left: 55%; bottom: 120px; animation-duration: 9.8s; animation-delay: 6.2s; }
+        .hm-8 { width: 4px; height: 4px; left: 86%; bottom: 105px; animation-duration: 11s; animation-delay: 1.8s; }
+
+        @keyframes moteFloat {
+            0% { transform: translateY(0) translateX(0); opacity: 0; }
+            20% { opacity: 0.9; }
+            80% { opacity: 0.75; }
+            100% { transform: translateY(-420px) translateX(28px); opacity: 0; }
+        }
+
+        /* Chiffon Drapery Flutter on Arch */
+        .cp-chiffon {
+            transform-origin: 150px 95px;
+            animation: chiffonFlutter 6.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes chiffonFlutter {
+            0% { transform: scaleX(1) skewX(0deg); }
+            100% { transform: scaleX(1.025) skewX(1deg); }
+        }
+
+        /* Floating Ambient Music Toggle */
+        .music-toggle {
+            position: fixed;
+            top: calc(16px + env(safe-area-inset-top, 0px));
+            right: 16px;
+            z-index: 90;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            box-shadow: 0 6px 20px rgba(59, 26, 99, 0.14);
+            color: #3b1a63;
+            font: 600 12.5px Mulish, sans-serif;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            transition: transform .25s, box-shadow .25s, background .25s;
+        }
+
+        .music-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(59, 26, 99, 0.22);
+            background: #ffffff;
+        }
+
+        .music-disc {
+            display: grid;
+            place-items: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #3b1a63;
+            color: #ffd166;
+            transition: transform .3s;
+        }
+
+        .music-toggle.playing .music-disc {
+            animation: discSpin 4s linear infinite;
+        }
+
+        @keyframes discSpin {
+            to { transform: rotate(360deg); }
+        }
+
+        .music-eq {
+            display: flex;
+            align-items: flex-end;
+            gap: 2.5px;
+            height: 14px;
+        }
+
+        .eq-bar {
+            width: 2.5px;
+            height: 4px;
+            border-radius: 2px;
+            background: #8a5fcb;
+            transition: height .2s;
+        }
+
+        .music-toggle.playing .eq-bar:nth-child(1) { animation: eqBar 0.9s ease-in-out infinite alternate; }
+        .music-toggle.playing .eq-bar:nth-child(2) { animation: eqBar 1.2s ease-in-out infinite 0.2s alternate; }
+        .music-toggle.playing .eq-bar:nth-child(3) { animation: eqBar 0.7s ease-in-out infinite 0.4s alternate; }
+        .music-toggle.playing .eq-bar:nth-child(4) { animation: eqBar 1.0s ease-in-out infinite 0.1s alternate; }
+
+        @keyframes eqBar {
+            0% { height: 3px; }
+            100% { height: 14px; background: #c99326; }
+        }
+
+        /* Interactive Petal Burst */
+        .interactive-petal {
+            position: absolute;
+            pointer-events: none;
+            z-index: 10;
+            border-radius: 60% 0 60% 0;
+            opacity: 0.95;
+            transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.3, 1), opacity 1.2s ease-out;
+            filter: drop-shadow(0 2px 6px rgba(59, 26, 99, 0.15));
+        }
+
+        .couple {
+            position: absolute;
+            z-index: 4;
+            left: 50%;
+            bottom: 22px;
+            width: clamp(245px, 36vw, 335px);
+            margin-left: calc(clamp(245px, 36vw, 335px)/-2);
+            animation: fl 5.5s ease-in-out infinite alternate;
+            transform-origin: 50% 100%;
+            filter: drop-shadow(0 12px 28px rgba(59, 26, 99, 0.16));
+        }
+
+        @keyframes fl {
+            to {
+                transform: translateY(-7px) rotate(.5deg);
+            }
+        }
+
+        .cp-veil {
+            transform-origin: 184px 108px;
+            animation: veilWave 4.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes veilWave {
+            from {
+                transform: rotate(0deg) skewX(0deg);
+            }
+            to {
+                transform: rotate(2.5deg) skewX(-2deg);
+            }
+        }
+
+        .cp-sparkle {
+            animation: spkTwinkle 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes spkTwinkle {
+            0%, 100% {
+                opacity: .3;
+                transform: scale(.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.25);
+            }
+        }
+
+        .pre {
+            position: fixed;
+            inset: 0;
+            z-index: 99;
+            background: #cfe8f7;
+            display: grid;
+            place-items: center;
+            color: #3b1a63;
+            text-align: center;
+            animation: out .8s 2.5s forwards
+        }
+
+        @keyframes out {
+            to {
+                opacity: 0;
+                visibility: hidden
+            }
+        }
+
+        .pre h2 {
+            font-size: clamp(46px, 10vw, 84px);
+            clip-path: inset(0 100% 0 0);
+            animation: wr 1.6s .4s forwards
+        }
+
+        @keyframes wr {
+            to {
+                clip-path: inset(0)
+            }
+        }
+
+        .pre p {
+            display: flex;
+            gap: 12px;
+            justify-content: center
+        }
+
+        .pre i {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+            animation: on .3s forwards
+        }
+
+        @keyframes on {
+            to {
+                background: #ffd166;
+                box-shadow: 0 0 12px #ffd166
+            }
+        }
+
+        .pt {
+            position: fixed;
+            top: -5vh;
+            z-index: 6;
+            pointer-events: none;
+            border-radius: 60% 0 60% 0;
+            opacity: .8;
+            animation: fall linear infinite
+        }
+
+        @keyframes fall {
+            to {
+                transform: translate(60px, 110vh) rotate(540deg)
+            }
+        }
+
+        .rv {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity .9s, transform .9s
+        }
+
+        .rv.in {
+            opacity: 1;
+            transform: none
+        }
+
+        .sec {
+            max-width: 1100px;
+            margin: auto;
+            padding: 84px 20px;
+            text-align: center
+        }
+
+        .band {
+            background: var(--soft)
+        }
+
+        h2.script {
+            font-size: clamp(44px, 8vw, 64px);
+            line-height: 1.2;
+            margin-bottom: 24px
+        }
+
+        .vs {
+            font-size: clamp(24px, 4vw, 32px);
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+            max-width: 640px;
+            margin: auto
+        }
+
+        .vs small {
+            display: block;
+            font: 600 14px Mulish;
+            letter-spacing: .14em;
+            margin-top: 12px;
+            font-style: normal
+        }
+
+        .cdw {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .cb {
+            background: var(--card);
+            border-radius: 18px;
+            min-width: 80px;
+            padding: 16px 10px;
+            box-shadow: 0 8px 24px #3b1a6320
+        }
+
+        .cb b {
+            display: block;
+            font: 600 42px/1.1 'Cormorant Garamond';
+            display: inline-block
+        }
+
+        .cb span {
+            display: block;
+            font-size: 13px;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .pop {
+            animation: pp .5s
+        }
+
+        @keyframes pp {
+            from {
+                transform: translateY(-14px);
+                opacity: 0
+            }
+        }
+
+        .tl {
+            max-width: 620px;
+            margin: auto;
+            text-align: left;
+            position: relative;
+        }
+
+        .tl-item {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+
+        .tl-track {
+            width: 26px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tl-node {
+            width: 26px;
+            height: 26px;
+            flex-shrink: 0;
+            z-index: 2;
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .tl-flower {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: visible;
+        }
+
+        .tl-vine-wrap {
+            flex: 1;
+            width: 20px;
+            position: relative;
+            margin: -3px 0 -4px;
+        }
+
+        .tl-vine-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: visible;
+        }
+
+        .tl-stem-grow {
+            position: absolute;
+            inset: 0;
+            -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+        }
+
+        .tl-leaf {
+            position: absolute;
+            width: 10px;
+            height: 6px;
+            background: #5e9e3e;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .tl-leaf-r {
+            top: 32%;
+            left: calc(50% + 1px);
+            border-radius: 10px 0 10px 0;
+            transform-origin: 0% 50%;
+            transform: scale(0) rotate(-25deg);
+        }
+
+        .tl-leaf-l {
+            top: 68%;
+            right: calc(50% + 1px);
+            border-radius: 0 10px 0 10px;
+            transform-origin: 100% 50%;
+            transform: scale(0) rotate(25deg);
+        }
+
+        .tl-body {
+            flex: 1;
+            padding-bottom: 34px;
+            opacity: 0;
+            transform: translateY(14px);
+        }
+
+        .tl-item:last-child .tl-body {
+            padding-bottom: 6px;
+        }
+
+        .tl-body h3 {
+            font: 600 26px 'Cormorant Garamond', serif;
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        .tl-body p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        @keyframes tlPop {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            70% {
+                opacity: 1;
+                transform: scale(1.3);
+                filter: drop-shadow(0 0 8px #f7c948cc);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                filter: drop-shadow(0 0 4px #f7c94866);
+            }
+        }
+
+        @keyframes tlDraw {
+            to {
+                -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        @keyframes tlLeaf {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            60% {
+                opacity: 1;
+                transform: scale(1.35);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes tlSlide {
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .tl.in .tl-item:nth-child(1) .tl-node, .sec.in .tl-item:nth-child(1) .tl-node { animation: tlPop .5s .2s cubic-bezier(.18,.9,.32,1.3) forwards }
+        .tl.in .tl-item:nth-child(1) .tl-body, .sec.in .tl-item:nth-child(1) .tl-body { animation: tlSlide .6s .3s ease-out forwards }
+        .tl.in .tl-item:nth-child(1) .tl-stem-grow, .sec.in .tl-item:nth-child(1) .tl-stem-grow { animation: tlDraw .8s .7s ease-in-out forwards }
+        .tl.in .tl-item:nth-child(1) .tl-leaf-r, .sec.in .tl-item:nth-child(1) .tl-leaf-r { animation: tlLeaf .4s 1.0s ease-out forwards }
+        .tl.in .tl-item:nth-child(1) .tl-leaf-l, .sec.in .tl-item:nth-child(1) .tl-leaf-l { animation: tlLeaf .4s 1.3s ease-out forwards }
+
+        .tl.in .tl-item:nth-child(2) .tl-node, .sec.in .tl-item:nth-child(2) .tl-node { animation: tlPop .5s 1.5s cubic-bezier(.18,.9,.32,1.3) forwards }
+        .tl.in .tl-item:nth-child(2) .tl-body, .sec.in .tl-item:nth-child(2) .tl-body { animation: tlSlide .6s 1.6s ease-out forwards }
+        .tl.in .tl-item:nth-child(2) .tl-stem-grow, .sec.in .tl-item:nth-child(2) .tl-stem-grow { animation: tlDraw .8s 2.0s ease-in-out forwards }
+        .tl.in .tl-item:nth-child(2) .tl-leaf-r, .sec.in .tl-item:nth-child(2) .tl-leaf-r { animation: tlLeaf .4s 2.3s ease-out forwards }
+        .tl.in .tl-item:nth-child(2) .tl-leaf-l, .sec.in .tl-item:nth-child(2) .tl-leaf-l { animation: tlLeaf .4s 2.6s ease-out forwards }
+
+        .tl.in .tl-item:nth-child(3) .tl-node, .sec.in .tl-item:nth-child(3) .tl-node { animation: tlPop .5s 2.8s cubic-bezier(.18,.9,.32,1.3) forwards }
+        .tl.in .tl-item:nth-child(3) .tl-body, .sec.in .tl-item:nth-child(3) .tl-body { animation: tlSlide .6s 2.9s ease-out forwards }
+
+        .tl h3,
+        .cd h3 {
+            font: 600 26px 'Cormorant Garamond'
+        }
+
+        .g2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px
+        }
+
+        .cd {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            padding: 30px 24px;
+            box-shadow: 0 10px 30px #3b1a6314;
+            transition: transform .35s, box-shadow .35s
+        }
+
+        .cd:hover {
+            transform: translateY(-7px) rotate(-.4deg);
+            box-shadow: 0 18px 40px #3b1a6326
+        }
+
+        .cd p {
+            margin: 6px 0
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--btn);
+            color: #fff;
+            border: 0;
+            border-radius: 999px;
+            padding: 12px 28px;
+            font: 600 15px Mulish;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 12px 6px 0;
+            transition: transform .25s, box-shadow .25s
+        }
+
+        .btn:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 0 6px #b79be055
+        }
+
+        .sch {
+            max-width: 560px;
+            margin: auto;
+            text-align: left
+        }
+
+        .sch div {
+            display: flex;
+            gap: 18px;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .sch b {
+            min-width: 90px;
+            color: var(--v)
+        }
+
+
+        footer {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 60px 20px calc(200px + env(safe-area-inset-bottom, 0px))
+        }
+
+        footer svg {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            pointer-events: none
+        }
+
+        footer>:not(svg) {
+            position: relative;
+            z-index: 1
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                animation: none !important;
+                transition: none !important
+            }
+
+            .l,
+            .rv,
+            .tl-node,
+            .tl-body,
+            .tl-leaf,
+            .cp-veil,
+            .cp-sparkle {
+                opacity: 1 !important;
+                transform: none !important
+            }
+
+            .tl-stem-grow {
+                -webkit-clip-path: inset(0 0 0 0) !important;
+                clip-path: inset(0 0 0 0) !important
+            }
+
+            .pre,
+            .pt {
+                display: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tk"></div>
+    <div class="pre" id="pre">
+        <div>
+            <h2 class="script"><span data-k="a"></span> &amp; <span data-k="b"></span></h2>
+            <p id="pl"></p>
+        </div>
+    </div>
+    <button class="music-toggle" id="musicToggle" aria-label="Play wedding music" title="Play wedding melody">
+        <span class="music-disc">
+            <svg class="music-note-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </span>
+        <span class="music-eq" aria-hidden="true">
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+            <span class="eq-bar"></span>
+        </span>
+        <span class="music-txt">Wedding Melody</span>
+    </button>
+    <header class="hero" id="hero">
+        <div class="cl" style="width:380px;height:120px;top:210px;left:6%"></div>
+        <div class="cl" style="width:460px;height:140px;top:430px;right:2%;animation-duration:52s"></div>
+
+        <!-- Heavenly God Rays / Sunbeams -->
+        <div class="god-rays" aria-hidden="true">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+        </div>
+
+        <!-- Flying White Doves -->
+        <div class="dove-track dove-track-1" aria-hidden="true">
+            <svg class="dove-svg" viewBox="0 0 36 26">
+                <path class="dove-wing" d="M 14 13 C 14 4, 25 1, 32 3 C 27 7, 21 10, 18 13 Z" fill="#ffffff" />
+                <path d="M 4 14 C 1 12, 0 10, 2 8 C 8 8, 14 12, 19 13 C 24 14, 28 17, 33 16 C 31 19, 26 21, 20 20 C 15 19, 10 22, 6 24 C 7 20, 7 17, 4 14 Z" fill="#ffffff" />
+                <circle cx="3" cy="9" r="0.8" fill="#5c4530" />
+                <path d="M 1 9 Q -4 7 -6 8 M -3 8 Q -4 5 -6 6 M -4 8 Q -6 10 -7 9" stroke="#4f8c35" stroke-width="0.8" fill="none"/>
+            </svg>
+        </div>
+        <div class="dove-track dove-track-2" aria-hidden="true">
+            <svg class="dove-svg" viewBox="0 0 32 24">
+                <path class="dove-wing" d="M 12 12 C 12 4, 22 1, 28 3 C 24 7, 18 10, 16 12 Z" fill="#ffffff" />
+                <path d="M 3 13 C 1 11, 0 9, 2 7 C 7 7, 12 11, 17 12 C 21 13, 25 16, 29 15 C 27 18, 23 20, 18 19 C 13 18, 9 21, 5 23 C 6 19, 6 16, 3 13 Z" fill="#ffffff" />
+                <circle cx="2.5" cy="8" r="0.7" fill="#5c4530" />
+            </svg>
+        </div>
+
+        <!-- Floating Golden Sparkles / Fireflies -->
+        <div class="hero-motes" aria-hidden="true">
+            <span class="hm hm-1"></span>
+            <span class="hm hm-2"></span>
+            <span class="hm hm-3"></span>
+            <span class="hm hm-4"></span>
+            <span class="hm hm-5"></span>
+            <span class="hm hm-6"></span>
+            <span class="hm hm-7"></span>
+            <span class="hm hm-8"></span>
+        </div>
+
+        <svg class="f br" id="br" role="img" aria-label="Flowering branches"></svg><svg class="f li" id="li"
+            aria-hidden="true"></svg><svg class="f gr" id="gr" aria-hidden="true"></svg>
+
+        <!-- Translucent Cathedral Gothic Window Silhouette -->
+        <svg class="hero-cathedral" id="cath" viewBox="0 0 400 600" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+            <defs>
+                <linearGradient id="cathG" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+                    <stop offset="50%" stop-color="#f7e08a" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+                </linearGradient>
+            </defs>
+            <path d="M 50 600 L 50 320 C 50 160, 200 40, 200 40 C 200 40, 350 160, 350 320 L 350 600" fill="none" stroke="url(#cathG)" stroke-width="2.5" />
+            <path d="M 68 600 L 68 330 C 68 185, 200 70, 200 70 C 200 70, 332 185, 332 330 L 332 600" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.4" />
+            <circle cx="200" cy="180" r="54" fill="none" stroke="url(#cathG)" stroke-width="2" />
+            <circle cx="200" cy="180" r="36" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.6" />
+            <circle cx="200" cy="180" r="18" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.7" />
+            <path d="M 200 126 C 185 145, 185 165, 200 180 C 215 165, 215 145, 200 126 Z" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.5"/>
+            <path d="M 200 234 C 185 215, 185 195, 200 180 C 215 195, 215 215, 200 234 Z" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.5"/>
+            <path d="M 146 180 C 165 165, 185 165, 200 180 C 185 195, 165 195, 146 180 Z" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.5"/>
+            <path d="M 254 180 C 235 165, 215 165, 200 180 C 215 195, 235 195, 254 180 Z" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.5"/>
+            <path d="M 100 600 L 100 360 C 100 270, 195 240, 195 240 L 195 600" fill="none" stroke="url(#cathG)" stroke-width="1.8" />
+            <path d="M 300 600 L 300 360 C 300 270, 205 240, 205 240 L 205 600" fill="none" stroke="url(#cathG)" stroke-width="1.8" />
+            <line x1="68" y1="360" x2="332" y2="360" stroke="#ffffff" stroke-width="1" opacity="0.35" />
+            <line x1="68" y1="460" x2="332" y2="460" stroke="#ffffff" stroke-width="1" opacity="0.35" />
+        </svg>
+
+        <div class="ht">
+            <!-- Sacred Scripture Blessing Motto -->
+            <div class="l scripture-motto" style="--d:0s" aria-label="Biblical Scripture">
+                <span class="sc-cross">✝</span>
+                <p class="sc-verse">“What God has joined together,<br class="sc-br"> let no one separate”</p>
+                <span class="sc-ref">— Mark 10:9 —</span>
+            </div>
+
+            <!-- Royal Monogram Crest with Cross & Laurel Wreath -->
+            <div class="l crest" style="--d:0.05s" aria-hidden="true">
+                <svg width="68" height="74" viewBox="0 0 68 74">
+                    <defs>
+                        <linearGradient id="crestGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ffe8a3" />
+                            <stop offset="50%" stop-color="#d4af37" />
+                            <stop offset="100%" stop-color="#9a6e18" />
+                        </linearGradient>
+                    </defs>
+                    <g stroke="url(#crestGold)" stroke-linecap="round">
+                        <line x1="34" y1="2" x2="34" y2="14" stroke-width="2.2" />
+                        <line x1="28" y1="6" x2="40" y2="6" stroke-width="2.2" />
+                        <circle cx="34" cy="6" r="1.5" fill="#ffe08a" />
+                    </g>
+                    <g fill="none" stroke="url(#crestGold)" stroke-width="1.2">
+                        <path d="M 16 54 C 8 42, 8 26, 18 16" />
+                        <ellipse cx="11" cy="46" rx="4" ry="2" fill="#d4af37" opacity="0.75" transform="rotate(-30 11 46)"/>
+                        <ellipse cx="9" cy="34" rx="4" ry="2" fill="#d4af37" opacity="0.75" transform="rotate(-15 9 34)"/>
+                        <ellipse cx="13" cy="22" rx="4" ry="2" fill="#d4af37" opacity="0.75" transform="rotate(15 13 22)"/>
+                    </g>
+                    <g fill="none" stroke="url(#crestGold)" stroke-width="1.2">
+                        <path d="M 52 54 C 60 42, 60 26, 50 16" />
+                        <ellipse cx="57" cy="46" rx="4" ry="2" fill="#d4af37" opacity="0.75" transform="rotate(30 57 46)"/>
+                        <ellipse cx="59" cy="34" rx="4" ry="2" fill="#d4af37" opacity="0.75" transform="rotate(15 59 34)"/>
+                        <ellipse cx="55" cy="22" rx="4" ry="2" fill="#d4af37" opacity="0.75" transform="rotate(-15 55 22)"/>
+                    </g>
+                    <circle cx="34" cy="42" r="23" fill="none" stroke="url(#crestGold)" stroke-width="1.2" stroke-dasharray="2.5 3" opacity="0.85"/>
+                    <circle cx="34" cy="42" r="20" fill="#ffffff88" stroke="#8a5fcb" stroke-width="1.4"/>
+                    <text x="34" y="48" text-anchor="middle" font-family="'Great Vibes', cursive" font-size="22" fill="#3b1a63" font-weight="600">R &amp; D</text>
+                    <circle cx="31" cy="65" r="4" fill="none" stroke="url(#crestGold)" stroke-width="1.4"/>
+                    <circle cx="37" cy="65" r="4" fill="none" stroke="url(#crestGold)" stroke-width="1.4"/>
+                </svg>
+            </div>
+
+            <p class="l serif i" style="--d:.15s">Together with their families</p>
+            <h1 class="l script" style="--d:.4s"><span class="gold-shimmer-text"><span data-k="a"></span> &amp; <span data-k="b"></span></span></h1>
+            <p class="l hero-invite-line" style="--d:.8s">Warmly invite you to their wedding celebration</p>
+
+            <div class="l dt" style="--d:1.15s"><span data-k="mon"></span><i></i><b class="serif"
+                    data-k="day"></b><i></i><span data-k="yr"></span></div>
+
+        </div>
+        <svg class="couple" id="cp" viewBox="0 0 300 400" role="img" aria-label="Illustrated bride and groom under a wedding arch">
+            <defs>
+                <linearGradient id="veilG" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+                    <stop offset="60%" stop-color="#f5efff" stop-opacity="0.65" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.25" />
+                </linearGradient>
+                <linearGradient id="dressG" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="85%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#f0ebf7" />
+                </linearGradient>
+                <linearGradient id="tuxG" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#2a334d" />
+                    <stop offset="100%" stop-color="#1b2133" />
+                </linearGradient>
+                <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+                <linearGradient id="chiffonG" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.82" />
+                    <stop offset="50%" stop-color="#fdfbfa" stop-opacity="0.52" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.12" />
+                </linearGradient>
+            </defs>
+
+            <!-- Wedding Arch (Trellis) Behind Couple -->
+            <g class="cp-arch" opacity="0.95">
+                <path d="M 38 360 C 38 45, 262 45, 262 360" fill="none" stroke="#d4af37" stroke-width="2" opacity=".6" />
+                <path d="M 46 360 C 46 55, 254 55, 254 360" fill="none" stroke="#e8d594" stroke-width="1.5" stroke-dasharray="3 4" opacity=".5" />
+
+                <!-- Draped Chiffon Curtains on Arch -->
+                <g class="cp-chiffon" opacity="0.88">
+                    <!-- Left Drape -->
+                    <path d="M 40 90 C 35 140, 24 230, 27 355 C 37 355, 47 230, 48 100 Z" fill="url(#chiffonG)" />
+                    <path d="M 42 90 C 33 150, 25 240, 29 355" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
+                    <path d="M 46 100 C 40 160, 36 250, 40 355" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6" />
+                    <!-- Right Drape -->
+                    <path d="M 260 90 C 265 140, 276 230, 273 355 C 263 355, 253 230, 252 100 Z" fill="url(#chiffonG)" />
+                    <path d="M 258 90 C 267 150, 275 240, 271 355" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
+                    <path d="M 254 100 C 260 160, 264 250, 260 355" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6" />
+                    <!-- Top Arch Swag / Valance -->
+                    <path d="M 42 95 Q 150 148 258 95 Q 150 124 42 95" fill="url(#chiffonG)" />
+                    <path d="M 44 98 Q 150 149 256 98" fill="none" stroke="#ffffff" stroke-width="1.3" opacity="0.8" />
+                </g>
+
+                <!-- Fairy lights on Arch -->
+                <circle cx="58" cy="240" r="3.5" fill="#ffe08a" filter="url(#goldGlow)" />
+                <circle cx="50" cy="180" r="3" fill="#fff" />
+                <circle cx="62" cy="120" r="3.5" fill="#ffe08a" filter="url(#goldGlow)" />
+                <circle cx="95" cy="72" r="3" fill="#fff" />
+                <circle cx="205" cy="72" r="3" fill="#fff" />
+                <circle cx="238" cy="120" r="3.5" fill="#ffe08a" filter="url(#goldGlow)" />
+                <circle cx="250" cy="180" r="3" fill="#fff" />
+                <circle cx="242" cy="240" r="3.5" fill="#ffe08a" filter="url(#goldGlow)" />
+
+                <!-- Arch Greenery & Roses Top-Left -->
+                <g transform="translate(68, 65)">
+                    <path d="M-10 18 Q10 -6 32 -14" fill="none" stroke="#4a7330" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="-4" cy="10" rx="8" ry="4" fill="#5e9e3e" transform="rotate(-30 -4 10)"/>
+                    <ellipse cx="12" cy="0" rx="8" ry="4" fill="#6ba846" transform="rotate(-15 12 0)"/>
+                    <ellipse cx="26" cy="-8" rx="7" ry="3.5" fill="#5e9e3e" transform="rotate(20 26 -8)"/>
+                    <circle cx="4" cy="6" r="8" fill="#fff" stroke="#ebdcf2" stroke-width="1.2"/>
+                    <circle cx="4" cy="6" r="4.5" fill="#f8b8cc"/>
+                    <circle cx="4" cy="6" r="2" fill="#e86b88"/>
+                    <circle cx="-12" cy="16" r="6" fill="#fceded" stroke="#f4b8c8" stroke-width="1"/>
+                    <circle cx="-12" cy="16" r="2.5" fill="#e86b88"/>
+                    <circle cx="22" cy="-4" r="6.5" fill="#b79be0"/>
+                    <circle cx="22" cy="-4" r="2.5" fill="#fff"/>
+                </g>
+
+                <!-- Arch Greenery & Roses Top-Right -->
+                <g transform="translate(190, 60)">
+                    <path d="M-20 -10 Q10 -2 30 20" fill="none" stroke="#4a7330" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="-10" cy="-6" rx="8" ry="4" fill="#5e9e3e" transform="rotate(15 -10 -6)"/>
+                    <ellipse cx="6" cy="4" rx="8" ry="4" fill="#6ba846" transform="rotate(30 6 4)"/>
+                    <ellipse cx="22" cy="14" rx="7" ry="3.5" fill="#5e9e3e" transform="rotate(45 22 14)"/>
+                    <circle cx="0" cy="-2" r="8" fill="#fff" stroke="#ebdcf2" stroke-width="1.2"/>
+                    <circle cx="0" cy="-2" r="4.5" fill="#f8b8cc"/>
+                    <circle cx="0" cy="-2" r="2" fill="#e86b88"/>
+                    <circle cx="16" cy="10" r="6" fill="#b79be0"/>
+                    <circle cx="16" cy="10" r="2.5" fill="#fff"/>
+                    <circle cx="-16" cy="-8" r="6" fill="#fceded" stroke="#f4b8c8" stroke-width="1"/>
+                </g>
+            </g>
+
+            <!-- Soft Ground Shadow Beneath Couple -->
+            <ellipse cx="148" cy="355" rx="85" ry="9" fill="#00000024" />
+
+            <!-- Bride's Billowing Cathedral Veil -->
+            <g class="cp-veil">
+                <path d="M 182 108 C 220 120, 248 180, 245 270 C 243 320, 230 350, 195 352 C 220 330, 228 270, 222 200 C 218 160, 200 125, 185 112 Z" 
+                      fill="url(#veilG)" />
+                <path d="M 182 108 C 220 120, 248 180, 245 270 C 243 320, 230 350, 195 352" 
+                      fill="none" stroke="#ffffff" stroke-width="1.8" stroke-dasharray="3 3" opacity=".8" />
+                <path d="M 188 118 C 212 140, 230 190, 225 280 C 222 320, 212 342, 190 350" 
+                      fill="none" stroke="#ffffff" stroke-width="1.2" opacity=".5" />
+            </g>
+
+            <!-- Groom (Daniel) -->
+            <g class="cp-groom">
+                <!-- Shoes -->
+                <ellipse cx="94" cy="350" rx="14" ry="6" fill="#181d28" />
+                <ellipse cx="120" cy="350" rx="14" ry="6" fill="#181d28" />
+                <path d="M 84 349 Q 94 345 106 349" stroke="#3b445b" stroke-width="1.2" fill="none"/>
+                <path d="M 110 349 Q 120 345 132 349" stroke="#3b445b" stroke-width="1.2" fill="none"/>
+
+                <!-- Trousers -->
+                <path d="M 82 248 L 84 348 L 104 348 L 109 270 L 114 348 L 132 348 L 134 248 Z" fill="#202638" />
+                <line x1="94" y1="255" x2="94" y2="346" stroke="#171b26" stroke-width="1.2" />
+                <line x1="123" y1="255" x2="123" y2="346" stroke="#171b26" stroke-width="1.2" />
+
+                <!-- Tuxedo Jacket -->
+                <path d="M 76 162 L 72 254 L 138 254 L 136 162 Z" fill="url(#tuxG)" />
+
+                <!-- White Shirt in V-neck -->
+                <path d="M 96 156 L 107 206 L 118 156 Z" fill="#ffffff" />
+                <circle cx="107" cy="182" r="1.2" fill="#cbd5e1" />
+                <circle cx="107" cy="195" r="1.2" fill="#cbd5e1" />
+
+                <!-- Satin Lapels -->
+                <path d="M 90 156 L 106 208 L 96 248 L 76 162 Z" fill="#171c2a" />
+                <path d="M 124 156 L 108 208 L 118 248 L 136 162 Z" fill="#171c2a" />
+
+                <!-- Lavender Bow Tie -->
+                <polygon points="100,158 107,162 100,166" fill="#7047b0" />
+                <polygon points="114,158 107,162 114,166" fill="#7047b0" />
+                <circle cx="107" cy="162" r="2.5" fill="#8a5fcb" />
+
+                <!-- Boutonnière -->
+                <circle cx="122" cy="178" r="4" fill="#ffffff" stroke="#ebdcf2" stroke-width=".8"/>
+                <circle cx="122" cy="178" r="2" fill="#f8b8cc"/>
+                <path d="M 122 182 L 121 190" stroke="#4f8c35" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="125" cy="184" rx="3.5" ry="1.8" fill="#5e9e3e" transform="rotate(30 125 184)"/>
+                <circle cx="121" cy="189" r="1" fill="#f7c948"/>
+
+                <!-- Groom Arms -->
+                <path d="M 78 162 C 68 185, 66 215, 73 240 C 76 244, 82 244, 83 239 C 78 215, 78 190, 86 168 Z" fill="#1e2434" />
+                <ellipse cx="75" cy="242" rx="5" ry="6" fill="#fcd5b5" />
+
+                <!-- Arm holding bride's hand -->
+                <path d="M 134 165 C 140 185, 144 205, 149 220 C 146 223, 140 223, 137 218 C 132 205, 128 188, 126 170 Z" fill="#1b2130" />
+                <circle cx="147" cy="222" r="5.5" fill="#fcd5b5" />
+
+                <!-- Groom Collar & Head -->
+                <rect x="100" y="146" width="14" height="13" rx="3" fill="#fcd5b5" />
+                <polygon points="98,154 107,157 101,150" fill="#ffffff" />
+                <polygon points="116,154 107,157 113,150" fill="#ffffff" />
+                <circle cx="107" cy="120" r="23" fill="#fcd5b5" />
+                <circle cx="85" cy="122" r="5.5" fill="#fcd5b5" />
+                <circle cx="129" cy="122" r="5.5" fill="#fcd5b5" />
+
+                <!-- Hair -->
+                <path d="M 84 118 C 82 100, 92 88, 108 86 C 124 84, 134 94, 131 114 C 127 104, 122 96, 110 96 C 98 96, 90 106, 88 120 Z" fill="#241a15" />
+                <path d="M 85 116 Q 94 92 118 90 Q 132 94 130 112 Q 124 102 112 101 Q 95 100 85 116 Z" fill="#382921" />
+
+                <!-- Face details -->
+                <path d="M 94 113 Q 100 110 104 113" stroke="#241a15" stroke-width="2" stroke-linecap="round" fill="none" />
+                <path d="M 111 113 Q 115 110 121 113" stroke="#241a15" stroke-width="2" stroke-linecap="round" fill="none" />
+                <path d="M 95 120 Q 100 125 105 120" stroke="#241a15" stroke-width="2.4" stroke-linecap="round" fill="none" />
+                <path d="M 111 120 Q 116 125 121 120" stroke="#241a15" stroke-width="2.4" stroke-linecap="round" fill="none" />
+                <circle cx="94" cy="125" r="5.5" fill="#f9a9a0" opacity=".65" />
+                <circle cx="122" cy="125" r="5.5" fill="#f9a9a0" opacity=".65" />
+                <path d="M 103 131 Q 108 136 113 131" stroke="#b5483a" stroke-width="2" stroke-linecap="round" fill="none" />
+            </g>
+
+            <!-- Bride (Rachel) -->
+            <g class="cp-bride">
+                <!-- A-Line Skirt -->
+                <path d="M 173 194 Q 183 196 195 194 L 226 350 Q 184 356 142 350 L 173 194 Z" fill="url(#dressG)" />
+                <path d="M 166 220 Q 160 290 148 348" stroke="#e6dfef" stroke-width="2" fill="none" />
+                <path d="M 183 200 Q 182 280 180 353" stroke="#e6dfef" stroke-width="2" fill="none" />
+                <path d="M 200 220 Q 208 290 220 348" stroke="#e6dfef" stroke-width="2" fill="none" />
+                <path d="M 143 350 Q 153 355 163 351 Q 174 356 184 352 Q 195 356 205 352 Q 216 355 226 350" 
+                      stroke="#d8cee6" stroke-width="2" fill="none" />
+
+                <!-- Bodice & Neckline -->
+                <path d="M 171 164 Q 184 158 197 164 L 196 195 Q 184 197 172 195 Z" fill="#ffffff" />
+                <path d="M 173 166 Q 179 174 184 169 Q 189 174 195 166" stroke="#ebdcf2" stroke-width="1.8" fill="none" />
+                <path d="M 172 193 Q 184 196 196 193 L 195 197 Q 184 200 173 197 Z" fill="#f7c948" />
+
+                <!-- Bare Shoulders, Neck & Pearl Necklace -->
+                <rect x="178" y="146" width="12" height="14" rx="4" fill="#fcd5b5" />
+                <path d="M 178 155 Q 184 160 190 155" stroke="#ffffff" stroke-width="2" stroke-dasharray="2.5 1.5" fill="none" />
+                <circle cx="184" cy="160" r="1.8" fill="#ffd166" />
+
+                <!-- Bride Arms -->
+                <path d="M 197 165 C 208 178, 208 195, 198 206 C 195 204, 192 198, 198 188 C 201 180, 198 172, 194 166 Z" fill="#fcd5b5" />
+                <path d="M 171 165 C 160 180, 154 202, 149 220" stroke="#fcd5b5" stroke-width="7" stroke-linecap="round" fill="none" />
+                <circle cx="150" cy="221" r="5" fill="#fcd5b5" />
+
+                <!-- Lush Bridal Bouquet -->
+                <g class="cp-bouquet" transform="translate(186, 202)">
+                    <ellipse cx="-12" cy="0" rx="9" ry="5" fill="#5e9e3e" transform="rotate(-30 -12 0)"/>
+                    <ellipse cx="14" cy="2" rx="9" ry="5" fill="#4f8c35" transform="rotate(25 14 2)"/>
+                    <ellipse cx="0" cy="10" rx="8" ry="4" fill="#6ba846" transform="rotate(80 0 10)"/>
+                    <path d="M -2 8 L -4 20 M 2 8 L 3 20" stroke="#4f8c35" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M -6 12 Q 0 16 6 12" stroke="#f7c948" stroke-width="3" fill="none"/>
+                    <path d="M -2 15 Q -6 26 -4 34 M 2 15 Q 6 26 4 34" stroke="#f7c948" stroke-width="1.8" fill="none" opacity=".9"/>
+                    <circle cx="-6" cy="-2" r="7.5" fill="#ffffff" stroke="#ebdcf2" stroke-width="1"/>
+                    <circle cx="-6" cy="-2" r="4" fill="#f8b4c4"/>
+                    <circle cx="6" cy="-3" r="7" fill="#ffffff" stroke="#ebdcf2" stroke-width="1"/>
+                    <circle cx="6" cy="-3" r="3.5" fill="#8a5fcb"/>
+                    <circle cx="0" cy="2" r="8" fill="#ffffff" stroke="#ebdcf2" stroke-width="1.2"/>
+                    <circle cx="0" cy="2" r="4.5" fill="#f9a9a0"/>
+                    <circle cx="0" cy="2" r="2" fill="#e86b88"/>
+                    <circle cx="-10" cy="4" r="5" fill="#b79be0"/>
+                    <circle cx="10" cy="4" r="5.5" fill="#f8b4c4"/>
+                    <circle cx="-2" cy="-9" r="2" fill="#fff"/>
+                    <circle cx="3" cy="-9" r="2" fill="#fff"/>
+                </g>
+
+                <!-- Bride Head & Face -->
+                <circle cx="184" cy="120" r="21" fill="#fcd5b5" />
+
+                <!-- Hair & Updo -->
+                <path d="M 166 122 C 164 96, 175 88, 188 88 C 204 88, 212 98, 208 124 C 203 108, 196 98, 185 98 C 174 98, 168 108, 166 122 Z" fill="#54301c" />
+                <circle cx="186" cy="88" r="14" fill="#54301c" />
+                <circle cx="186" cy="86" r="11" fill="#693e25" />
+                <path d="M 166 118 Q 173 104 186 104 Q 200 104 204 118 Q 194 108 184 108 Q 174 108 166 118 Z" fill="#693e25" />
+                <path d="M 204 122 C 208 135, 206 150, 203 162" stroke="#54301c" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+                <!-- Flower Crown / Tiara -->
+                <g class="cp-tiara" transform="translate(184, 98)">
+                    <path d="M -14 0 Q 0 -6 14 0" fill="none" stroke="#f7c948" stroke-width="1.8" />
+                    <circle cx="-12" cy="0" r="3.2" fill="#b79be0" />
+                    <circle cx="-6" cy="-2.5" r="3.8" fill="#ffffff" stroke="#ebdcf2" stroke-width=".8"/>
+                    <circle cx="-6" cy="-2.5" r="1.5" fill="#f8b4c4"/>
+                    <circle cx="0" cy="-3.5" r="4.5" fill="#ffffff" stroke="#ebdcf2" stroke-width="1"/>
+                    <circle cx="0" cy="-3.5" r="2" fill="#ffd166"/>
+                    <circle cx="6" cy="-2.5" r="3.8" fill="#ffffff" stroke="#ebdcf2" stroke-width=".8"/>
+                    <circle cx="6" cy="-2.5" r="1.5" fill="#f8b4c4"/>
+                    <circle cx="12" cy="0" r="3.2" fill="#8a5fcb" />
+                </g>
+
+                <!-- Bride Face Details -->
+                <path d="M 172 114 Q 176 111 180 114" stroke="#54301c" stroke-width="1.8" stroke-linecap="round" fill="none" />
+                <path d="M 188 114 Q 192 111 196 114" stroke="#54301c" stroke-width="1.8" stroke-linecap="round" fill="none" />
+                <path d="M 172 121 Q 176 126 181 121" stroke="#221a15" stroke-width="2.2" stroke-linecap="round" fill="none" />
+                <path d="M 181 120 L 183 118" stroke="#221a15" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M 187 121 Q 192 126 197 121" stroke="#221a15" stroke-width="2.2" stroke-linecap="round" fill="none" />
+                <path d="M 197 120 L 199 118" stroke="#221a15" stroke-width="1.8" stroke-linecap="round" />
+                <circle cx="172" cy="125" r="5.5" fill="#f9a9a0" opacity=".7" />
+                <circle cx="196" cy="125" r="5.5" fill="#f9a9a0" opacity=".7" />
+                <path d="M 180 131 Q 184 136 188 131" stroke="#d95368" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            </g>
+
+            <!-- Foreground Meadow & Wildflowers -->
+            <g class="cp-foreground-meadow" transform="translate(0, 338)">
+                <path d="M 75 22 Q 80 0 74 -10 M 82 22 Q 86 6 92 -4 M 98 22 Q 95 4 88 -8" stroke="#4a7a32" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 130 22 Q 134 4 128 -12 M 138 22 Q 142 8 148 -6" stroke="#5b8f3d" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 215 22 Q 220 2 216 -12 M 224 22 Q 230 6 236 -4" stroke="#4a7a32" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="82" cy="4" r="3.5" fill="#fff"/>
+                <circle cx="82" cy="4" r="1.5" fill="#ffd166"/>
+                <circle cx="136" cy="2" r="3.5" fill="#8a5fcb"/>
+                <circle cx="228" cy="4" r="3.5" fill="#fff"/>
+                <circle cx="228" cy="4" r="1.5" fill="#ffd166"/>
+            </g>
+
+            <!-- Floating Sparkles & Soft Petals -->
+            <g class="cp-sparkles">
+                <path d="M 148 102 Q 148 106 144 106 Q 148 106 148 110 Q 148 106 152 106 Q 148 106 148 102 Z" fill="#ffd166" class="cp-sparkle" filter="url(#goldGlow)"/>
+                <path d="M 74 95 Q 74 98 71 98 Q 74 98 74 101 Q 74 98 77 98 Q 74 98 74 95 Z" fill="#ffd166" class="cp-sparkle" style="animation-delay: 1.2s;"/>
+                <path d="M 228 100 Q 228 103 225 103 Q 228 103 228 106 Q 228 103 231 103 Q 228 103 228 100 Z" fill="#ffd166" class="cp-sparkle" style="animation-delay: 1.8s;"/>
+                <path d="M 144 80 Q 148 76 152 80 Q 148 88 144 80 Z" fill="#f8b4c4" opacity=".8" transform="rotate(20 148 80)"/>
+            </g>
+        </svg>
+    </header>
+    <main>
+        <section class="sec rv" id="scripture-sec"><svg width="26" height="34" viewBox="0 0 26 34" aria-hidden="true">
+                <path d="M13 2v30M3 11h20" stroke="#f7c948" stroke-width="4" stroke-linecap="round" />
+            </svg>
+            <p class="vs">And if one prevail against him, two shall withstand him; and a threefold cord is not quickly
+                broken.<small>ECCLESIASTES 4:12</small></p>
+        </section>
+        <div class="band">
+            <section class="sec rv">
+                <h2 class="script">Counting down</h2>
+                <div class="cdw" id="cdw"></div>
+            </section>
+        </div>
+        <section class="sec rv">
+            <h2 class="script">Our story</h2>
+            <div class="tl" id="tl"></div>
+        </section>
+        <div class="band">
+            <section class="sec">
+                <h2 class="script rv">Wedding details</h2>
+                <div class="g2" id="dt"></div>
+            </section>
+        </div>
+        <section class="sec">
+            <h2 class="script rv">Order of the day</h2>
+            <div class="sch rv" id="sc"></div>
+        </section>
+
+    </main>
+    <footer><svg id="gr2" aria-hidden="true"></svg>
+        <p class="script" style="font-size:60px;line-height:1.2"><span data-k="ia"></span> &amp; <span
+                data-k="ib"></span></p>
+        <p class="serif i" data-k="tag"></p>
+        <p>With love and blessings</p>
+        <a class="btn" id="cal" target="_blank" rel="noopener">Add to calendar</a><button class="btn" id="sh">Share
+            invitation</button>
+    </footer>
+    <script>
+        const C = {
+            a: 'Rachel', b: 'Daniel', date: new Date(2027, 2, 26, 17, 0), time: '5 O’clock in the Afternoon', venue: 'The Aelvic Palace', addr: '810, Garlandiez City, New Zealand', church: 'St. Mary’s Church', caddr: '12 Chapel Road, Garlandiez City', ctime: '3:00 PM', tag: '#RachelAndDaniel',
+            story: [['First hello', '2019', 'A chance meeting after Sunday service turned into a lifelong friendship.'], ['The question', '2025', 'He asked, she said yes, and both families rejoiced.'], ['Forever begins', null, 'Surrounded by family and friends, we say “I do” before God.']],
+            sched: [['3:00 PM', 'Holy matrimony'], ['4:15 PM', 'Photographs'], ['5:00 PM', 'Reception & blessings'], ['6:30 PM', 'Dinner'], ['8:00 PM', 'Cake & celebration']]
+        };
+        const D = C.date, K = { a: C.a, b: C.b, ia: C.a[0], ib: C.b[0], mon: D.toLocaleString('en', { month: 'long' }), day: D.getDate(), yr: D.getFullYear(), time: C.time, venue: C.venue, addr: C.addr, tag: C.tag }, $ = i => document.getElementById(i);
+        document.querySelectorAll('[data-k]').forEach(e => e.textContent = K[e.dataset.k]);
+        let s = 7; const r = () => (s = s * 16807 % 2147483647) / 2147483647, W = Math.min(Math.max(innerWidth, 360), 1600), pk = a => a[r() * a.length | 0];
+        [br, li, gr].forEach(e => e.setAttribute('viewBox', `0 0 ${W} ${e.id == 'br' ? 170 : e.id == 'li' ? 130 : 200}`));
+        let o = ''; const L = W * .42; for (const m of [0, 1]) {
+            const f = x => m ? W - x : x;
+            o += `<path d="M${f(0)} 30Q${f(L * .5)} 20 ${f(L)} 78M${f(L * .2)} 26Q${f(L * .4)} 60 ${f(L * .55)} 104" stroke="#4a2a1a" stroke-width="5" fill="none"/>`;
+            for (let i = 0; i < W / 9; i++) { const x = r() * L, y = 28 + x / L * 50 + (r() - .3) * 62; o += `<ellipse cx="${f(x)}" cy="${y}" rx="15" ry="7" fill="${pk(['#5e9e3e', '#4f8c35', '#76b24f'])}" transform="rotate(${r() * 180} ${f(x)} ${y})"/>` }
+            for (let i = 0; i < W / 55; i++) { const x = r() * L, y = 34 + x / L * 45 + r() * 40; o += `<circle cx="${f(x)}" cy="${y}" r="6" fill="${r() < .5 ? '#8a5fcb' : '#f7c948'}"/><circle cx="${f(x)}" cy="${y}" r="2" fill="#fff6c8"/>` }
+        }
+        br.innerHTML = o; o = '';
+        [[16, 70, 16], [50, 104, 46], [84, 128, 80]].forEach(([y0, cy, y1]) => { o += `<path d="M0 ${y0}Q${W / 2} ${cy} ${W} ${y1}" stroke="#2c2c2c" stroke-width=".8" fill="none"/>`; const n = Math.round(W / 40); for (let i = 1; i < n; i++) { const t = i / n, u = 1 - t; o += `<circle class="bu" cx="${t * W}" cy="${u * u * y0 + 2 * u * t * cy + t * t * y1 + 5}" r="4.5" style="animation-delay:${(r() * 3).toFixed(1)}s"/>` } }); li.innerHTML = o;
+        o = `<rect y="130" width="${W}" height="70" fill="#6f9a3d"/>`; for (let i = 0; i < W / 12; i++)o += `<circle cx="${r() * W}" cy="${84 + r() * 40}" r="${20 + r() * 18}" fill="${pk(['#4d7a38', '#5b8a40', '#3e6b2e'])}"/>`;
+        o += `<rect y="132" width="${W}" height="68" fill="#6f9a3d"/>`; for (let i = 0; i < W / 20; i++) { const x = r() * W, y = 140 + r() * 44; o += `<g class="fl"><path d="M${x} ${y}v26" stroke="#4d8a3a" stroke-width="2"/><circle cx="${x}" cy="${y}" r="${5 + r() * 4}" fill="${pk(['#fff', '#e6d4fa', '#f7c948', '#f4a6c0', '#b79be0'])}"/><circle cx="${x}" cy="${y}" r="2" fill="#f7c948"/></g>` } gr.innerHTML = o; gr2.setAttribute('viewBox', `0 0 ${W} 200`); gr2.innerHTML = o;
+        pl.innerHTML = '<i></i>'.repeat(7).replace(/<i>/g, (m, i) => `<i style="animation-delay:${(.2 + i / 16 * 0) + 0}s"></i>`);[...pl.children].forEach((e, i) => e.style.animationDelay = (.2 + i * .28) + 's');
+        for (let i = 0; i < 14; i++) { const p = document.createElement('i'); p.className = 'pt'; const z = 8 + r() * 8; p.style.cssText = `left:${r() * 100}vw;width:${z}px;height:${z}px;background:${pk(['#f4c6e0', '#e6d4fa', '#fff', '#f7e08a'])};animation-duration:${10 + r() * 8}s;animation-delay:${2.5 + r() * 10}s`; document.body.appendChild(p) }
+        $('tl').innerHTML = C.story.map(([h, y, t], i, a) => `
+            <div class="tl-item">
+                <div class="tl-track">
+                    <div class="tl-node" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" class="tl-flower">
+                            <circle cx="12" cy="5" r="3" fill="#b79be0" opacity=".85"/>
+                            <circle cx="19" cy="12" r="3" fill="#b79be0" opacity=".85"/>
+                            <circle cx="12" cy="19" r="3" fill="#b79be0" opacity=".85"/>
+                            <circle cx="5" cy="12" r="3" fill="#b79be0" opacity=".85"/>
+                            <circle cx="12" cy="12" r="6" fill="#f7c948" stroke="#8a5fcb" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="2.2" fill="#fff"/>
+                        </svg>
+                    </div>
+                    ${i < a.length - 1 ? `
+                    <div class="tl-vine-wrap" aria-hidden="true">
+                        <svg class="tl-vine-svg" viewBox="0 0 20 100" preserveAspectRatio="none">
+                            <path class="tl-guide" d="M10 0 Q14 25, 10 50 T10 100" fill="none" stroke="#d9cdee" stroke-dasharray="3 3" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                        </svg>
+                        <div class="tl-stem-grow">
+                            <svg class="tl-vine-svg" viewBox="0 0 20 100" preserveAspectRatio="none">
+                                <path class="tl-stem" d="M10 0 Q14 25, 10 50 T10 100" fill="none" stroke="#4f8c35" stroke-width="2.8" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+                            </svg>
+                        </div>
+                        <span class="tl-leaf tl-leaf-r"></span>
+                        <span class="tl-leaf tl-leaf-l"></span>
+                    </div>` : ''}
+                </div>
+                <div class="tl-body">
+                    <h3>${h}${y ? ' · ' + y : ' · ' + K.yr}</h3>
+                    <p>${t}</p>
+                </div>
+            </div>`).join('');
+        const mp = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+        $('dt').innerHTML = [['Church ceremony', C.church, C.caddr, C.ctime], ['Reception', C.venue, C.addr, '5:00 PM']].map(([h, v, a, t]) => `<div class="cd rv"><h3>${h}</h3><p class="script" style="font-size:36px">${v}</p><p>${K.mon} ${K.day}, ${K.yr} · ${t}</p><p>${a}</p><a class="btn" target="_blank" rel="noopener" href="${mp(v + ', ' + a)}">Get directions</a></div>`).join('');
+        $('sc').innerHTML = C.sched.map(([t, e]) => `<div><b>${t}</b><span>${e}</span></div>`).join('');
+        const p2 = n => String(n).padStart(2, '0'), fd = d => '' + d.getFullYear() + p2(d.getMonth() + 1) + p2(d.getDate()) + 'T' + p2(d.getHours()) + p2(d.getMinutes()) + '00';
+        $('cal').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(C.a + ' & ' + C.b + ' Wedding') + '&dates=' + fd(D) + '/' + fd(new Date(+D + 216e5)) + '&location=' + encodeURIComponent(C.venue + ', ' + C.addr);
+        $('sh').onclick = async () => { try { if (navigator.share) await navigator.share({ title: document.title, url: location.href }); else { await navigator.clipboard.writeText(location.href); $('sh').textContent = 'Link copied' } } catch (e) { } };
+        $('cdw').innerHTML = ['Days', 'Hours', 'Minutes', 'Seconds'].map(n => `<div class="cb"><b>0</b><span>${n}</span></div>`).join('');
+        const bs = [...document.querySelectorAll('.cb b')]; function tick() { let d = Math.max(0, D - new Date()) / 1e3 | 0;[d / 86400 | 0, d / 3600 % 24 | 0, d / 60 % 60 | 0, d % 60].forEach((v, i) => { v = p2(v); if (bs[i].textContent != v) { bs[i].textContent = v; bs[i].classList.remove('pop'); void bs[i].offsetWidth; bs[i].classList.add('pop') } }) } tick(); setInterval(tick, 1e3);
+        const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target) } }), { threshold: .15 }); document.querySelectorAll('.rv, .tl').forEach(e => io.observe(e));
+        let tk = 0; addEventListener('scroll', () => { if (tk) return; tk = requestAnimationFrame(() => { tk = 0; const y = scrollY; if (y > innerHeight) return; br.style.top = -y * .05 + 'px'; li.style.top = -y * .08 + 'px'; gr.style.bottom = -y * .12 + 'px'; cp.style.marginBottom = -y * .06 + 'px'; if (window.cath) cath.style.marginBottom = -y * .04 + 'px' }) }, { passive: true });
+        setTimeout(() => pre.remove(), 3500);
+
+
+
+        // Web Audio API Angelic Harp Synthesizer (Pachelbel's Canon in D)
+        let audioCtx = null, isMusicPlaying = false, musicTimer = null;
+        const mBtn = $('musicToggle');
+        if (mBtn) {
+            const chords = [
+                [293.66, 369.99, 440.00, 587.33], // D4, F#4, A4, D5
+                [220.00, 277.18, 329.63, 440.00], // A3, C#4, E4, A4
+                [246.94, 293.66, 369.99, 493.88], // B3, D4, F#4, B4
+                [185.00, 220.00, 277.18, 369.99], // F#3, A3, C#4, F#4
+                [196.00, 246.94, 293.66, 392.00], // G3, B3, D4, G4
+                [146.83, 185.00, 220.00, 293.66], // D3, F#3, A3, D4
+                [196.00, 246.94, 293.66, 392.00], // G3, B3, D4, G4
+                [220.00, 277.18, 329.63, 440.00]  // A3, C#4, E4, A4
+            ];
+            let chordIdx = 0, noteIdx = 0;
+
+            function playHarpPluck(freq, time) {
+                if (!audioCtx) return;
+                const osc = audioCtx.createOscillator();
+                const osc2 = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                const filter = audioCtx.createBiquadFilter();
+
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(freq, time);
+
+                osc2.type = 'sine';
+                osc2.frequency.setValueAtTime(freq * 2, time);
+
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(1500, time);
+                filter.frequency.exponentialRampToValueAtTime(380, time + 1.8);
+
+                gain.gain.setValueAtTime(0.0001, time);
+                gain.gain.linearRampToValueAtTime(0.18, time + 0.012);
+                gain.gain.exponentialRampToValueAtTime(0.0001, time + 2.2);
+
+                osc.connect(filter);
+                osc2.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                osc.start(time);
+                osc2.start(time);
+                osc.stop(time + 2.3);
+                osc2.stop(time + 2.3);
+            }
+
+            function stepArpeggio() {
+                if (!isMusicPlaying || !audioCtx) return;
+                const curChord = chords[chordIdx];
+                const freq = curChord[noteIdx];
+                playHarpPluck(freq, audioCtx.currentTime);
+
+                noteIdx++;
+                if (noteIdx >= curChord.length) {
+                    noteIdx = 0;
+                    chordIdx = (chordIdx + 1) % chords.length;
+                }
+                musicTimer = setTimeout(stepArpeggio, 380);
+            }
+
+            mBtn.onclick = async () => {
+                if (!audioCtx) {
+                    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                    audioCtx = new AudioCtx();
+                }
+                if (audioCtx.state === 'suspended') {
+                    await audioCtx.resume();
+                }
+
+                if (isMusicPlaying) {
+                    isMusicPlaying = false;
+                    clearTimeout(musicTimer);
+                    mBtn.classList.remove('playing');
+                    mBtn.querySelector('.music-txt').textContent = 'Wedding Melody';
+                } else {
+                    isMusicPlaying = true;
+                    mBtn.classList.add('playing');
+                    mBtn.querySelector('.music-txt').textContent = 'Pause Music';
+                    stepArpeggio();
+                }
+            };
+        }
+
+        // Interactive Petal & Sparkle Burst on Tap/Click in Hero
+        const heroEl = $('hero');
+        if (heroEl) {
+            const petalColors = ['#f8b4c4', '#e6d4fa', '#ffffff', '#ffd166', '#fceded', '#b79be0'];
+            heroEl.addEventListener('click', e => {
+                if (e.target.closest('button, a')) return;
+                const rect = heroEl.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                for (let i = 0; i < 8; i++) {
+                    const p = document.createElement('span');
+                    p.className = 'interactive-petal';
+                    const color = petalColors[Math.floor(Math.random() * petalColors.length)];
+                    const sz = 8 + Math.random() * 8;
+                    const angle = (Math.PI * 2 * i) / 8 + (Math.random() - 0.5) * 0.5;
+                    const dist = 28 + Math.random() * 45;
+                    const dx = Math.cos(angle) * dist;
+                    const dy = Math.sin(angle) * dist + 35;
+                    const rot = Math.random() * 360;
+
+                    p.style.cssText = `left:${x}px;top:${y}px;width:${sz}px;height:${sz * 1.3}px;background:${color};transform:translate(0,0) rotate(0deg);`;
+                    heroEl.appendChild(p);
+
+                    requestAnimationFrame(() => {
+                        p.style.transform = `translate(${dx}px,${dy}px) rotate(${rot}deg) scale(0.65)`;
+                        p.style.opacity = '0';
+                    });
+                    setTimeout(() => p.remove(), 1250);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
